@@ -7,7 +7,7 @@ To search with anyone to go to the event.
 
 The first illustrations to the project.
 
-![Login Page](screens/login.png) 
-![Main Page](screens/main.png)
+<img src="screens/login.png" alt="login page" width="250"> <img src="screens/main.png" alt="main page" width="250">
+
 
 As the project progresses, the screens will be updated along with information about the project.
