@@ -1,16 +1,13 @@
-# go_together
+# Go Together
 
-A new Flutter project.
+A new Flutter project. 
+To search with anyone to go to the event.
 
-## Getting Started
+## About project
 
-This project is a starting point for a Flutter application.
+The first illustrations to the project.
 
-A few resources to get you started if this is your first Flutter project:
+![Login Page](screens/login.png) 
+![Main Page](screens/main.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+As the project progresses, the screens will be updated along with information about the project.
