@@ -8,6 +8,29 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Center(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              TextField(
+                decoration: InputDecoration(
+                  icon: Icon(Icons.search, color: Colors.purple,),
+                  labelText: 'Поиск',
+                ),
+              ),
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    // TODO: результаты поиска
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
