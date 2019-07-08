@@ -65,18 +65,6 @@ class _MainPageState extends State<MainPage> {
       },
     );
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0.0,
-        leading: IconButton(
-            icon: Icon(FontAwesomeIcons.signOutAlt, color: Colors.purple),
-            onPressed: () {
-              Navigator.pop(context);
-            }),
-        title: Text('GoTogether',
-            style: TextStyle(color: Colors.purple, fontFamily: "Nexa")),
-        centerTitle: true,
-      ),
       body: _kTabPages[currentTabIndex],
       bottomNavigationBar: bottomNavBar,
     );
