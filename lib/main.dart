@@ -5,6 +5,9 @@ import 'config.dart' as config;
 import 'package:http/http.dart' as http;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'mainScreens/main.dart';
+import 'mainScreens/recover.dart';
+import 'mainScreens/registration.dart';
+import 'package:go_together/widgets/appBar.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,9 +21,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.purple),
       routes: {
         '/login': (BuildContext context) => LoginPage(),
-//        '/reg': (BuildContext context) => RegistrationPage(),
+        '/reg': (BuildContext context) => RegistrationPage(),
         '/main': (BuildContext context) => MainPage(),
-//        '/recovery': (BuildContext context) => RecoveryPage(),
+        '/recovery': (BuildContext context) => RecoveryPage(),
       },
     );
   }
@@ -84,13 +87,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0.0,
-        title: Text('GoTogether',
-            style: TextStyle(color: Colors.purple, fontFamily: 'Nexa')),
-        centerTitle: true,
-      ),
+      appBar: myApp(),
       resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: Stack(
@@ -172,6 +169,7 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(25.0)),
                         onPressed: () {
                           // Переход на регистрацию
+                          Navigator.pushNamed(context, '/reg');
                         },
                         child: Container(
                           width: 150.0,
@@ -190,7 +188,8 @@ class _LoginPageState extends State<LoginPage> {
                       textColor: Colors.black12,
                       child: Text('Забыли пароль?'),
                       onPressed: () {
-                        // Регистрацию переход
+                        // Восстановление пароля
+                        Navigator.pushNamed(context, '/recovery');
                       },
                     )
                   ],
